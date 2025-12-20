@@ -1,6 +1,6 @@
 ---
 authors:
-  - name: 
+  - name: null
 ---
 
 # 1 Aim of this Guide
