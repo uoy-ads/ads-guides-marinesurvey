@@ -1,6 +1,11 @@
-# Creating the Digital Archive
+---
+authors:
+  - name: null
+---
 
-## Data Selection: Deciding what to Archive
+# 4 Creating the Digital Archive
+
+## 4.1 Data Selection: Deciding what to Archive
 
 During the course of a project data may be generated that might not be considered as suitable for inclusion in the final project archive. For example, the patch text and the sound velocity test where system adjustments might be made to counter ‘smiles’ or ‘frowns’ in the data where the outer beams of sound are moving faster or slower than assumed. It is also common to run a few survey lines over the top of a known object to also check motion sensors, with errors in tidal adjustment manifesting as mismatched survey lines.
 
@@ -8,13 +13,13 @@ Whilst many elements of data acquisition and processing may be automated (e.g. u
 
 For example, all modern bathymetric instruments (e.g. single-beam echosounder, multi-beam echosounder and LiDAR) record ‘noise’ – these distortions can be caused by air bubbles in the water, seaweed, fish, caught net and other things affecting the signals. Complex structures like masts can give a weak return, and so they could be assumed to be noise or mid-water features like fish. Sometimes data can be over cleaned and real archaeological features accidentally removed. This can happen if an automatic cleaning tool has been used and the results not fully checked. There may be a need to return to the earlier processed forms of the data set to correct and make sure all archaeological information has been extracted. 
 
-While retaining all data from a project is always the safest option - and may be a requirement in some instances - for data sets that undergo multiple processing steps archiving the ‘start’ and ‘end’ points while recording in detail the connecting steps can ensure that data is reproducible and can be verified. Hence, practitioners suggested a preference for archiving the navigationally corrected ‘raw’ data files and the final data products – providing, of course, the metadata recorded for the project contains the sufficient details of all processing (including software and hardware details, processes and steps, so that a user is able to recreate the intermediate phases. This is discussed further in the ‘Preservation intervention points for marine data’ section below and more generally in the ADS Guides to Good Practice section on [‘Data selection: preservation intervention points’](https://archaeologydataservice.ac.uk/help-guidance/guides-to-good-practice/the-project-lifecycle/data-selection-preservation-intervention-points/).
+While retaining all data from a project is always the safest option - and may be a requirement in some instances - for data sets that undergo multiple processing steps archiving the ‘start’ and ‘end’ points while recording in detail the connecting steps can ensure that data is reproducible and can be verified. Hence, practitioners suggested a preference for archiving the navigationally corrected ‘raw’ data files and the final data products – providing, of course, the metadata recorded for the project contains the sufficient details of all processing (including software and hardware details, processes and steps, so that a user is able to recreate the intermediate phases. This is discussed further in the ‘Preservation intervention points for marine data’ section below and more generally in the ADS Guides to Good Practice section on ['Data selection: preservation intervention points'](https://doi.org/10.5284/h0p2-5584).
 
 The development of inhouse procedural notes to ensure standardised processing has also been emphasised as particularly useful for appraising the usefulness of data received. Keeping a log of the settings during each phase of processing ease the compilation of detailed metadata and can be included within the archival data set. Structured metadata and documentation is discussed further in the Metadata and Documentation section below.
 
-## Structuring your Archive
+## 4.2 Structuring your Archive
 
-General guidance on structuring digital archives is available in the ADS Guides to Good Practice section on [‘Planning for the creation of digital data’](https://archaeologydataservice.ac.uk/help-guidance/guides-to-good-practice/the-project-lifecycle/planning-for-the-creation-of-digital-data/). Additionally, the British Geological Survey have created detailed guidance on storing survey data within a standardised folder structure (BGS 2020). One core principle however is to assume that those working with your data come from a position of knowing very little about the project that generated it. Making directory and file names obvious in terms of what they are and what they contain is one basic step that can help make complex data sets understandable and navigable in the long term. This can include adding some means of identifying the relevant activity to the file name such as a unique reference number, project number, or project name to create a standardised naming convention e.g. for survey line increments:
+General guidance on structuring digital archives is available in the ADS Guides to Good Practice section on [‘Planning for the creation of digital data’](https://doi.org/10.5284/h0p2-5584). Additionally, the British Geological Survey have created detailed guidance on storing survey data within a standardised folder structure [@bgs2020survey]. One core principle however is to assume that those working with your data come from a position of knowing very little about the project that generated it. Making directory and file names obvious in terms of what they are and what they contain is one basic step that can help make complex data sets understandable and navigable in the long term. This can include adding some means of identifying the relevant activity to the file name such as a unique reference number, project number, or project name to create a standardised naming convention e.g. for survey line increments:
 
 *[Survey ID/Survey Name]_[Survey Year]_(Instrument][Incremental line identifier].(File Format Extension]*
 
@@ -23,30 +28,30 @@ Additionally, having different folders numbered or identified by phases such as 
 *[Survey ID/Survey Name]_[Survey Year]_SSSraw*
 
 Beyond this, structuring a project folder so that it has folders for different elements, such as report writing, correspondence, bibliographic searches, Data In and Data Out, logs and metadata etc., from the outset allows project members to easily navigate the project data, save data to the right locations, and know where to access elements they may need at any time. This approach also makes it easier to identify data to be archived when the time comes for deposition.
+
 Inclusion of readme.txt or manifest files within the archive and component directories can also provide contextual information for subsets of data, describing the overall structure and listing files independently of higher level metadata records.
 
-## Preservation Intervention Points for Marine Survey Data
+## 4.3 Preservation Intervention Points for Marine Survey Data
 
 The delivery of marine projects often involves data transformation by processes such as down-sampling, aggregation, annotation, and format migration. For example, multi-beam echosounder data may start out as a series of pings, position, altitude, tide measurements and sound velocity profiles, which are typically used to produce a gridded data set, which can feed into the representations as seabed contours.  Parts of this workflow (e.g. apply marrying positioning and altitude to georeferenced measurements) can be undertaken in real-time during the acquisition process, but other elements are done during post-processing.
 
 Whilst practitioners have suggested a preference for archiving the navigationally corrected ‘raw’ data files and the final data products, it may also be desirable to preserve data from intermediate stages if a great deal of additional manipulation and manual interventions have had to be undertaken. As stated above, maintaining and archiving a detailed log of these processes can provide transparency and aid in selection for deposition.
 
 ```{figure} ../images/figure01.png
----
-name: figure01
----
-Workflow for creation of an interactive 3D rendered model from multi-beam echosounder data, video footage and digital photographs. Multibeam survey image ©SEACAMS Bangor University ([O Dan y Dŵr, SEACAMS 2](http://www.seacams.ac.uk/seacams2/seascapes/MBES.php.en)). 3D model of A1 submarine © Nautical Archaeology Society and Historic England ([A1 Submarine Dive Trail, Nautical Archaeology Society](https://www.nauticalarchaeologysociety.org/a1-submarine-dive-trail)).
+:alt: figure01
+
+__Figure 1:__ Workflow for creation of an interactive 3D rendered model from multi-beam echosounder data, video footage and digital photographs. Multibeam survey image ©SEACAMS Bangor University ([O Dan y Dŵr, SEACAMS 2](http://www.seacams.ac.uk/seacams2/seascapes/MBES.php.en)). 3D model of A1 submarine © Nautical Archaeology Society and Historic England ([A1 Submarine Dive Trail, Nautical Archaeology Society](https://www.nauticalarchaeologysociety.org/a1-submarine-dive-trail)).
 ```
 
-## Data Processing and Formats
+## 4.4 Data Processing and Formats
 
 This processing to form ‘new’ data sets poses several archival issues in terms of selection and retention and an overview of file formats related to the phases of processing and interpretation is shown below. An underlying principle however is that raw data sets will almost always form the basis of the archived data set with derived products being selected for archive according to purpose, reuse potential, and ease of preservation. It is important to identify from the outset data formats that will be suitable for long-term preservation and to distinguish between these and formats that are used for short-term data collection and processing. Many repositories require data to be deposited in formats that are open, standardised, and often non-proprietary or software-specific to allow for long-term access and reuse. Export to such formats may or may not be possible at various stages in the data lifecycle. It is recommended that both proprietary and open format exports are stored and offered for archiving, particularly for complex survey data where elements may not be successfully exported to an open format.
 
-For more about the archiving of Digital Photographs, see the ADS [Guide to Raster Images](https://archaeologydataservice.ac.uk/help-guidance/guides-to-good-practice/basic-components/raster-images/introduction-to-raster-images/what-are-raster-images/). 
+For more about the archiving of Digital Photographs, see the ADS [Guide to Raster Images](https://doi.org/10.5284/mtgj-7130). 
 
-For more information about the archiving of Digital Video, see the ADS [Guide to Digital Video](https://archaeologydataservice.ac.uk/help-guidance/guides-to-good-practice/basic-components/digital-video/introduction-to-digital-video/what-is-digital-video/).
+For more information about the archiving of Digital Video, see the ADS [Guide to Digital Video](https://doi.org/10.5284/40fr-fr91).
 
-For more information about the archiving photogrammetric surveys, see the ADS [Guide to Close-range Photogrammetry](https://archaeologydataservice.ac.uk/help-guidance/guides-to-good-practice/data-collection-and-fieldwork/close-range-photogrammetry/introduction/close-range-digital-photogrammetry-in-archaeology/).
+For more information about the archiving photogrammetric surveys, see the ADS [Guide to Close-range Photogrammetry](https://doi.org/10.5284/wngr-en16).
 
 For more information about the archiving data from Oceanographic Data Loggers, see the [British Oceanographic Data Centre submission guidance](https://www.bodc.ac.uk/submit_data/submission_guidelines/preferred_file_formats/).
 
@@ -247,7 +252,7 @@ For more information about the archiving data from Oceanographic Data Loggers, s
   - .obj; .las; .txt; .docx.; .odt; .html; .dwg; .dxf; .svg; .tif; .jpg; .png; .dng; .pdf
 ```
 
-## Metadata and Documentation
+## 4.5 Metadata and Documentation
 
 Metadata for marine survey projects should be recorded at several levels (e.g. project level, survey level, etc.) to form a set of comprehensive documentation for the data produced. Many repositories will have their own metadata requirements at project or collection level for deposited data sets, and for specific types of data contained within these data sets. In addition to meeting the requirements of the designated repository, this guide recommends the use of the [MEDIN Data Guidelines](https://medin.org.uk/data-standards/medin-data-guidelines) for documenting the various survey techniques used.
 
@@ -358,30 +363,28 @@ In addition to using formal metadata specifications, this guide strongly recomme
 
 Sitting alongside the Data Guidelines, MEDIN’s [Discovery metadata standard](https://medin.org.uk/data-standards/medin-discovery-metadata-standard) contains information that accompanies a data set and allows users to discover the data set’s contents, provenance, and access conditions. It is a fundamental element of the previously-discussed FAIR Principles. The organisations making up the MEDIN DAC network have collaborated on the development of key fields of information which are standard across all the organisations, and which comply with the UK government GEMINI2 standard and international conventions such as INSPIRE and ISO19115.  
 
-## Copyright Considerations for Marine Survey Data
+## 4.6 Copyright Considerations for Marine Survey Data
 
 Digital archivists and repository managers stress the need to be fully aware of all the clauses of any data licences you may have entered. These may place limitations on derived data, its archiving and supply to other users by repositories and archiving organisations.
 
 Restrictions can range from simply placing an acknowledgement and licence number on any derived data sets, through to strict restrictions on how much of an original data set can be reproduced and the methods of reproduction. Copyright issues should be identified and clearly documented as early as possible in a project. Clearances and written permissions from any third-party copyright holders may need to be obtained and documentation provided to the MEDIN DAC on deposition of the data set. 
 
-## Importance of Developing an Archiving Plan
+## 4.7 Importance of Developing an Archiving Plan
 
 The complexity of some projects may require developing knowledge of the archiving requirements of more than one repository. It is important to anticipate this and make yourself familiar with what they will need from you to safely and securely preserve your data, and to make it available to others. Such considerations are often key components of overall Data Management Plans. Where components may be split across multiple repositories it is important to plan for the mutual referencing of these using, where possible, permanent identifiers (PIDs) such as Digital Object Identifiers (DOIs). This is equally important where the physical and digital archive are stored separately and museum or archive IDs can be used to tie such elements together.
 
-### Case Study: London Gateway Port: Channel Clearance, Dredging and Capital Dredging Project
-
+````{admonition}  Case Study: London Gateway Port: Channel Clearance, Dredging and Capital Dredging Project
 The project area for capital dredging for the new port was just over 100km in length and varied between 360m to 1km in width.
 
 ```{image} ../images/cs_londongateway-1.png
 :alt: "London Gateway Port: Channel Clearance, Dredging and Capital Dredging Project image 1"
-:class: bg-primary mb-1
 :align: center
 ```
 
 ```{image} ../images/cs_londongateway-2.png
 :alt: "London Gateway Port: Channel Clearance, Dredging and Capital Dredging Project image 2"
-:class: bg-primary mb-1
 :align: center
 ```
 
-A variety of investigation methods utilised over the span of the project which ran from 2006 until 2016 included diver observation, geophysical survey and capital dredging watching brief, and object reporting. As a result of the various phases of fieldwork over 40 archaeological sites of varying complexities were investigated, over 400 geophysical anomalies were identified, and over a thousand archaeological objects were recovered. Southend Museums Service have accessioned most of the finds and associated archive (Accession ID: SOUMS: A2018.4-5) which includes geophysical data, digital photographs, project / fieldwork / diving generated data, reports, x-rays and research. The Archaeology Data Service collection comprises the additional [project reporting](https://doi.org/10.5284/1083494) undertaken during the project.
+A variety of investigation methods utilised over the span of the project which ran from 2006 until 2016 included diver observation, geophysical survey and capital dredging watching brief, and object reporting. As a result of the various phases of fieldwork over 40 archaeological sites of varying complexities were investigated, over 400 geophysical anomalies were identified, and over a thousand archaeological objects were recovered. Southend Museums Service have accessioned most of the finds and associated archive (Accession ID: SOUMS: A2018.4-5) which includes geophysical data, digital photographs, project / fieldwork / diving generated data, reports, x-rays and research. The Archaeology Data Service collection comprises the additional project reporting undertaken during the project [@wa2020london].
+````

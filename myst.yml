@@ -1,0 +1,40 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 607db9d5-c101-4862-9bd8-f8750bdafa33
+  banner: ads_logo.png
+  title: "Marine Survey Data: A Guide to Good Practice"
+  description: 
+  keywords:
+    - archaeology
+    - marine survey
+  authors:
+    - name: Deanna Groom
+      affiliations: Centre for Applied Marine Sciences, Bangor University
+      orcid: https://orcid.org/0000-0003-0084-613X
+    - name: Kieron Niven
+      affiliations: Archaeology Data Service
+      orcid: https://orcid.org/0000-0002-0537-9238
+  license: CC-BY-4.0
+  open_access: true
+  doi: https://doi.org/10.5284/3y3w-g262
+  github: uoy-ads/ads-guides-marinesurvey
+  toc:
+    - file: index.md
+    - file: content/1-AimOfThisGuide.md
+    - file: content/2-CurrentArchivingProvision.md
+    - file: content/3-PlanningForTheCreation.md
+    - file: content/4-CreatingDigitalArchive.md
+    - file: content/5-MandE-NavigationPositionDatum.md
+    - file: content/6-MandE-MarineSurveyTechniques-Surface.md
+    - file: content/7-MandE-MarineSurveyTechniques-Below.md
+  exports:
+    - format: pdf
+site:
+  template: book-theme
+  options:
+    favicon: images/g2gp_signpost.png
+    logo: images/g2gp_signpost.png
+    logo_text: Guides to Good Practice
+  parts:
+    footer: footer.md

@@ -1,8 +1,13 @@
-# Current Archiving Provision and Initiatives: An Overview
+---
+authors:
+  - name: null
+---
+
+# 2 Current Archiving Provision and Initiatives: An Overview
 
 Digital archiving good practice requires the development of an archiving strategy from the very beginning, the implementation of short-term security measures whilst data is still being worked upon, thorough documentation, and the consideration of long-term preservation strategies. Such long-term strategies should include secure data storage alongside data refreshment and data migration i.e. the movement of data from one file format or storage medium to another to keep pace with changing technology. Consideration of file formats from the outset is key with certain formats creating significant barriers to long-term preservation and, importantly, data reuse. 
 
-A project cannot be said to have been completed until the archive has been transferred successfully and is stored in one or more repositories that maintain proper standards of care and accessibility (Chartered Institute for Archaeologists 2008). Moving beyond just storage, the article 'FAIR Principles of scientific data management and stewardship' (Wilkinson et al. 2016) encapsulates what both heritage and science sectors wish to see by way of improvements to the Findability, Accessibility, Interoperability and Re-use (FAIR) of digital assets. The article emphasises metadata and machine actionability as the direction of travel for archive creation and storage, recognising that computational support will increasingly be needed to deal with the volume, complexity, and speed at which data is being created – a reminder that we all need to keep an eye to the future in what we are generating today.
+A project cannot be said to have been completed until the archive has been transferred successfully and is stored in one or more repositories that maintain proper standards of care and accessibility (Chartered Institute for Archaeologists 2008). Moving beyond just storage, the article 'FAIR Principles of scientific data management and stewardship' [@wilkinson2016fair] encapsulates what both heritage and science sectors wish to see by way of improvements to the Findability, Accessibility, Interoperability and Re-use (FAIR) of digital assets. The article emphasises metadata and machine actionability as the direction of travel for archive creation and storage, recognising that computational support will increasingly be needed to deal with the volume, complexity, and speed at which data is being created – a reminder that we all need to keep an eye to the future in what we are generating today.
 
 Simple ways to get started are: 
 * create a Digital Data Management Plan (DMP) as part of the project proposal so that data selection and archiving issues are fully understood and planned for. Templates for DMPs are available from various organisations such as CIfA ([Dig Digital Tookit](https://www.archaeologists.net/digdigital)) and the Digital Curation Centre's [DMPonline](https://dmponline.dcc.ac.uk/) service.
